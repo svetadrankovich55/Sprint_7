@@ -4,35 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="121eb069-f4b9-438c-82d2-187c781f4b82" name="Changes" comment="create project sprint_7">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/courier/Courier.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/courier/CourierAssertions.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/courier/CourierClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/courier/CourierCredentials.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/courier/CourierGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/orders/AvailableStations.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/orders/Order.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/orders/OrderAssertions.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/orders/Orders.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/orders/OrdersClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/orders/OrdersGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/orders/PageInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/utils/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/AcceptOrderTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/CreateCourierTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/CreateOrderTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/DeleteCourierTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/GetOrderByTrackTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/GetOrdersTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/LoginCourierTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="121eb069-f4b9-438c-82d2-187c781f4b82" name="Changes" comment="create project sprint_7" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -149,6 +121,14 @@
       <option name="presentableId" value="Default" />
       <updated>1670270306951</updated>
     </task>
+    <task id="LOCAL-00001" summary="create project sprint_7">
+      <created>1670882196429</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1670882196429</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
