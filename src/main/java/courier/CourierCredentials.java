@@ -13,6 +13,23 @@ public class CourierCredentials {
         return new CourierCredentials(courier.getLogin(), courier.getPassword());
     }
 
+    public static CourierCredentials fromWithEmptyLogin(Courier courier) {
+        return new CourierCredentials("", courier.getPassword());
+    }
+
+    public static CourierCredentials fromWithEmptyPassword(Courier courier) {
+        return new CourierCredentials(courier.getLogin(),"");
+    }
+
+    public static CourierCredentials fromWithIncorrectLogin(Courier courier) {
+        return new CourierCredentials("Uchiha123456", courier.getPassword());
+    }
+
+    public static CourierCredentials fromWithIncorrectPassword(Courier courier) {
+        return new CourierCredentials(courier.getLogin(), "P@ssw0rd456");
+    }
+
+
     public String getLogin() {
         return login;
     }

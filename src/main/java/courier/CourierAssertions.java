@@ -64,7 +64,7 @@ public class CourierAssertions {
     public void failedDeleteWithNonexistentId(ValidatableResponse response) {
         response.assertThat()
                 .statusCode(404)
-                .body("message", equalTo("Курьера с таким id нет"));
+                .body("message", equalTo("Курьера с таким id нет."));
 
     }
 

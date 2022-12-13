@@ -36,11 +36,11 @@ public class LoginCourierTest {
    @Test
    @DisplayName("Failed login courier with empty login")
     public void failedLoginCourierWithEmptyLogin() {
-       Courier courier = generator.genericCourierWithEmptyLogin();
+       Courier courier = generator.random();
        ValidatableResponse creationResponse = courierClient.create(courier);
        courierAssertions.successfulCreation(creationResponse);
 
-       CourierCredentials courierCredentials = CourierCredentials.from(courier);
+       CourierCredentials courierCredentials = CourierCredentials.fromWithEmptyLogin(courier);
        ValidatableResponse loginResponse = courierClient.login(courierCredentials);
        courierAssertions.failedCourierLoginWithEmptyLoginOrPassword(loginResponse);
    }
@@ -48,11 +48,11 @@ public class LoginCourierTest {
     @Test
     @DisplayName("Failed login courier with empty password")
     public void failedLoginCourierWithEmptyPassword() {
-        Courier courier = generator.genericCourierWithEmptyPassword();
+        Courier courier = generator.random();
         ValidatableResponse creationResponse = courierClient.create(courier);
         courierAssertions.successfulCreation(creationResponse);
 
-        CourierCredentials courierCredentials = CourierCredentials.from(courier);
+        CourierCredentials courierCredentials = CourierCredentials.fromWithEmptyPassword(courier);
         ValidatableResponse loginResponse = courierClient.login(courierCredentials);
         courierAssertions.failedCourierLoginWithEmptyLoginOrPassword(loginResponse);
     }
@@ -60,11 +60,11 @@ public class LoginCourierTest {
     @Test
     @DisplayName("Failed login courier with incorrect login")
     public void failedLoginCourierWithIncorrectLogin() {
-        Courier courier = generator.genericCourierWithIncorrectLogin();
+        Courier courier = generator.random();
         ValidatableResponse creationResponse = courierClient.create(courier);
         courierAssertions.successfulCreation(creationResponse);
 
-        CourierCredentials courierCredentials = CourierCredentials.from(courier);
+        CourierCredentials courierCredentials = CourierCredentials.fromWithIncorrectLogin(courier);
         ValidatableResponse loginResponse = courierClient.login(courierCredentials);
         courierAssertions.failedCourierLoginWithIncorrectLoginOrPassword(loginResponse);
     }
@@ -72,11 +72,11 @@ public class LoginCourierTest {
     @Test
     @DisplayName("Failed login courier with incorrect password")
     public void failedLoginCourierWithIncorrectPassword() {
-        Courier courier = generator.genericCourierWithIncorrectPassword();
+        Courier courier = generator.random();
         ValidatableResponse creationResponse = courierClient.create(courier);
         courierAssertions.successfulCreation(creationResponse);
 
-        CourierCredentials courierCredentials = CourierCredentials.from(courier);
+        CourierCredentials courierCredentials = CourierCredentials.fromWithIncorrectPassword(courier);
         ValidatableResponse loginResponse = courierClient.login(courierCredentials);
         courierAssertions.failedCourierLoginWithIncorrectLoginOrPassword(loginResponse);
     }
